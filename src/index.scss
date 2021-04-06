@@ -1,0 +1,369 @@
+// /* http://meyerweb.com/eric/tools/css/reset/ 
+//    v2.0 | 20110126
+//    License: none (public domain)
+// */
+
+// html,
+// body,
+// div,
+// span,
+// applet,
+// object,
+// iframe,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// blockquote,
+// pre,
+// a,
+// abbr,
+// acronym,
+// address,
+// big,
+// cite,
+// code,
+// del,
+// dfn,
+// em,
+// img,
+// ins,
+// kbd,
+// q,
+// s,
+// samp,
+// small,
+// strike,
+// strong,
+// sub,
+// sup,
+// tt,
+// var,
+// b,
+// u,
+// i,
+// center,
+// dl,
+// dt,
+// dd,
+// ol,
+// ul,
+// li,
+// fieldset,
+// form,
+// label,
+// legend,
+// table,
+// caption,
+// tbody,
+// tfoot,
+// thead,
+// tr,
+// th,
+// td,
+// article,
+// aside,
+// canvas,
+// details,
+// embed,
+// figure,
+// figcaption,
+// footer,
+// header,
+// hgroup,
+// menu,
+// nav,
+// output,
+// ruby,
+// section,
+// summary,
+// time,
+// mark,
+// audio,
+// video {
+//   margin: 0;
+//   padding: 0;
+//   border: 0;
+//   font-size: 100%;
+//   font: inherit;
+//   vertical-align: baseline;
+// }
+// /* HTML5 display-role reset for older browsers */
+// article,
+// aside,
+// details,
+// figcaption,
+// figure,
+// footer,
+// header,
+// hgroup,
+// menu,
+// nav,
+// section {
+//   display: block;
+// }
+// body {
+//   line-height: 1;
+// }
+// ol,
+// ul {
+//   list-style: none;
+// }
+// blockquote,
+// q {
+//   quotes: none;
+// }
+// blockquote:before,
+// blockquote:after,
+// q:before,
+// q:after {
+//   content: "";
+//   content: none;
+// }
+// table {
+//   border-collapse: collapse;
+//   border-spacing: 0;
+// }
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// ul.list-container {
+//   display: flex;
+// }
+
+// .list-box {
+//   background: #eee;
+//   max-height: 300px;
+// }
+
+// img {
+//   width: 100%;
+//   height: 100%;
+//   display: block;
+//   object-fit: cover;
+// }
+
+// #progress-bar {
+//   &-progress {
+//     width: 0%;
+//     height: 10px;
+//     background: #ea9b39;
+//     line-height: 15px;
+//     color: wheat;
+//     transition: 0.4s;
+//   }
+// }
+
+// .load-anim {
+//   animation: 0.3s ease-out 0s 1 zoom, fadeIn 0.5s;
+// }
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// p,
+// a {
+//   font-family: "PT Sans", sans-serif;
+// }
+
+// h4 {
+//   font-size: 1rem;
+// }
+// h5,
+// a {
+//   font-size: 0.875rem;
+// }
+// a {
+//   text-decoration: none !important;
+// }
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// #root {
+//   height: 100%;
+// }
+
+// .btn_back {
+//   color: white;
+//   background: #444;
+//   padding: 15px;
+//   display: flex;
+//   align-items: flex-start;
+//   justify-content: space-between;
+//   align-self: flex-start;
+//   text-align: center;
+//   margin-bottom: 25px;
+// }
+// .main-image {
+//   display: flex;
+//   width: 100%;
+//   min-height: 400px;
+//   position: relative;
+//   flex: 1;
+//   &:not(:first-child) {
+//     margin-left: 35px;
+//   }
+//   &-header {
+//     display: flex;
+//     flex-direction: column;
+//     align-self: flex-end;
+//     color: white;
+//     background: rgba(0, 0, 0, 0.65);
+//     width: 100%;
+//     padding: 20px;
+//     margin-top: auto;
+//     &-quote {
+//       text-align: center;
+//       background: #e58918;
+//       padding: 6px 0;
+//       h5 {
+//         text-transform: uppercase;
+//         text-decoration: none !important;
+//         color: #444;
+//       }
+//     }
+//   }
+//   img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     z-index: -1;
+//   }
+// }
+
+// .main-images {
+//   display: flex;
+//   align-items: stretch;
+// }
+
+// .main-images a {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+// }
+
+// .contain {
+//   object-fit: contain;
+// }
+
+// img {
+//   max-height: 100%;
+//   object-fit: cover;
+//   width: 100%;
+// }
+
+// .main-images a:not(:first-child) {
+//   margin-left: 50px;
+// }
+
+// .main-container {
+//   max-width: 100%;
+//   padding: 0 50px;
+//   margin: 0 auto;
+// }
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes zoom {
+//   0% {
+//     transform: scale(0.5);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: scale(1);
+//     opacity: 1;
+//   }
+// }
+
+// .render-items {
+//   .list-container {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     height: 300px;
+//   }
+// }
+
+// .height-fix {
+//   height: 100%;
+// }
+
+// .input-container {
+//   max-width: 100%;
+//   padding: 0 50px;
+//   margin: 0 auto;
+//   .input-flex {
+//     display: flex;
+//     height: 100%;
+//     .input {
+//       &-left {
+//         width: 50%;
+//         display: block;
+//       }
+//       &-right {
+//         width: 50%;
+//         h1:not(:last-child) {
+//           margin-bottom: 10px;
+//         }
+//         &-text {
+//           margin-bottom: 50px;
+//           .quote-list {
+//             display: flex;
+//             &-img {
+//               width: 50%;
+//               max-height: 300px;
+//               img {
+//                 height: 100%;
+//                 width: 100%;
+//                 object-fit: contain;
+//               }
+//             }
+//             &-info {
+//               width: 50%;
+//             }
+//           }
+//           .list-colours {
+//             display: flex;
+//             justify-content: space-around;
+//             .colour-block {
+//               height: 100px;
+//               width: 100px;
+//               display: block;
+//               border-radius: 50%;
+//               box-shadow: 0px 2px 2px 0px #888888;
+//               &:hover {
+//                 cursor: pointer;
+//               }
+//             }
+//           }
+//         }
+//         &-input {
+//           select {
+//             margin-bottom: 25px;
+//             padding: 0.75rem 1.25rem;
+//             font-size: 1rem;
+//             line-height: 1.5;
+//             width: 50%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

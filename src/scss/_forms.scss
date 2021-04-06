@@ -1,0 +1,38 @@
+select {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+  display: block;
+  color: #495057;
+  background-color: #f8f9fa;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+input {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  color: #495057;
+  background-color: #f8f9fa;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  text-align: center;
+  outline: 3px solid white;
+  transition: 0.2s all ease;
+}
+
+.form_header {
+  margin-bottom: 25px;
+}
