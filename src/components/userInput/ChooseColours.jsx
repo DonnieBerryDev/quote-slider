@@ -17,11 +17,9 @@ class ChooseColours extends React.Component {
   }
 
   componentDidMount() {
-    axios
-      .get("http://localhost/tmd_media_quote_slider/server/api/colours.php")
-      .then((res) => {
-        this.setState({ colours: res.data })
-      })
+    axios.get("./api/colours.php").then((res) => {
+      this.setState({ colours: res.data })
+    })
   }
 
   testArray = () => {

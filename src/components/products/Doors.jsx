@@ -14,11 +14,9 @@ class Doors extends React.Component {
   }
 
   componentDidMount() {
-    axios
-      .get("http://localhost/tmd_media_quote_slider/server/api/subproducts.php")
-      .then((res) => {
-        this.setState({ subproducts: res.data[this.props.additionalprod.id] })
-      })
+    axios.get("./api/subproducts.php").then((res) => {
+      this.setState({ subproducts: res.data[this.props.additionalprod.id] })
+    })
   }
 
   setSubProd = (product) => {

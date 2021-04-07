@@ -13,14 +13,10 @@ class Windows extends React.Component {
   }
 
   componentDidMount() {
-    axios
-      .get(
-        "http://localhost/tmd_media_quote_slider/server/api/windowStyles.php"
-      )
-      .then((res) => {
-        this.setState({ windowStyles: res.data })
-        console.log(this.state.windowStyles)
-      })
+    axios.get("./api/windowStyles.php").then((res) => {
+      this.setState({ windowStyles: res.data })
+      console.log(this.state.windowStyles)
+    })
   }
 
   setSubProd = (product) => {

@@ -15,11 +15,9 @@ class SelectedProduct extends React.Component {
 
   // Api Call to main table
   componentDidMount() {
-    axios
-      .get("http://localhost/tmd_media_quote_slider/server/api/")
-      .then((res) => {
-        this.setState({ doors: res.data.door, windows: res.data.window })
-      })
+    axios.get("./api/").then((res) => {
+      this.setState({ doors: res.data.door, windows: res.data.window })
+    })
   }
 
   setAdditionalprod = (product) => {
