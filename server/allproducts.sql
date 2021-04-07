@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `allproducts`
+-- Database: `allproducts-31363980e9`
 --
 
 -- --------------------------------------------------------
@@ -197,7 +197,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `allproducts`
+-- Database: `allproducts-31363980e9`
 --
 
 -- --------------------------------------------------------
