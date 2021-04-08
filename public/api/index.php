@@ -7,7 +7,7 @@ header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type
 
 
 try {
-    $handler = new PDO('mysql:host=185.151.30.166;dbname=allproducts-31363980e9', 'root', '');
+    $handler = new PDO('mysql:host=mysql.stackcp.com:56282;dbname=allproducts-31363980e9', 'allproducts-31363980e9', '<_~]qf:6cuVz');
     $handler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     die("Sorry, database problem");

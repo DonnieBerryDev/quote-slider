@@ -5,7 +5,7 @@ header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Methods: GET, OPTIONS");
 
 try {
-    $handler = new PDO('mysql:host=185.151.30.166;dbname=allproducts-31363980e9', 'root', '');
+    $handler = new PDO('mysql:host=185.151.30.166;dbname=allproducts-31363980e9', allproducts-31363980e9, '');
     $handler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     die("Sorry, database problem");
@@ -26,7 +26,7 @@ header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Methods: GET, OPTIONS");
 
 try {
-    $handler = new PDO('mysql:host=185.151.30.166;dbname=allproducts-31363980e9', 'root', '');
+    $handler = new PDO('mysql:host=185.151.30.166;dbname=allproducts-31363980e9', allproducts-31363980e9, '');
     $handler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     die("Sorry, database problem");
