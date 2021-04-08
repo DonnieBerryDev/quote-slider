@@ -1,4 +1,5 @@
 import React from "react"
+import axios from "axios"
 import SelectedProduct from "./SelectedProduct.jsx"
 
 class Main extends React.Component {
@@ -8,6 +9,12 @@ class Main extends React.Component {
       selected: "",
       stage: "1",
     }
+  }
+
+  componentDidMount() {
+    axios.get("./api/").then((res) => {
+      console.log(res)
+    })
   }
 
   // When the user clicks a product, it is added to state and passed to App.js, the stage is moved to stage: 1
